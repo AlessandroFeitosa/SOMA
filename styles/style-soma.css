@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/* -------------- FONTS --------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* -------------- FONTS --------------- */
+
+/* -------------- VARIÁVEIS --------------- */
+:root {
+    --background: #f2f2f2;
+    --background-select: #f9f9f9;
+    --background-entrada: #fff;
+    --border-select: #ccc;
+    --font-color-select: #444;
+    --border-hover-select: #888;
+    --border-focus-select: #2e86de;
+    --border-form: #ccc;
+    --main-gap: 3rem;
+    --font-main: 'Roboto+Mono', monospace;
+}
+
+/* -------------- VARIÁVEIS --------------- */
+
+
+/* -------------- RESET --------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -------------- RESET --------------- */
+
+/* -------------- GERAIS --------------- */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: var(--font-main);
+}
+
+body {
+    background-color: var(--background);
+    margin: 0 auto;
+}
+
+main {
+    margin: 0 auto;
+}
+
+label {
+    font-size: 2rem;
+    width: 22rem;
+    margin: 1rem;
+}
+
+select {
+    font-size: 1.8rem;
+    width: 16rem;
+    text-align: center;
+}
+
+button {
+    width: 16rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 2px silver;
+    margin: 1rem;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+button:active {
+    background-color: #fff;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+span {
+    font-size: 2rem;
+}
+
+/* -------------- GERAIS --------------- */
+
+/* -------------- SEÇÃO SOMA --------------- */
+.section-soma {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------- JANELA CONFIG --------------- */
+.window-alpha {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.config-soma {
+    width: 36rem;
+    height: 36rem;
+    background-color: var(--background-entrada);
+    border-radius: 2rem;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 2rem;
+    position: relative;
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+.config-soma>button {
+    position: absolute;
+    bottom: 2rem;
+}
+
+
+.div-line {
+    margin: 2rem auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------- JANELA CONFIG --------------- */
+
+/* -------------- JANELA CONTAS --------------- */
+/* Container janela soma */
+.container-soma {
+    width: 36rem;
+    height: 54rem;
+    background-color: var(--background-entrada);
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 4rem;
+    box-shadow: 5px 5px 5px black;
+}
+
+/* container tempo */
+.div-tempo-soma {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* Texto tempo */
+.texto-conta {
+    font-size: 5rem;
+    text-align: center;
+    width: 80%;
+    margin: 1rem;
+    background-color: var(--border-form);
+}
+
+/* Texto input conta */
+.input-texto {
+    width: 80%;
+    font-size: 5rem;
+    margin: 1rem;
+    text-align: center;
+    color: #2e86de;
+    border: 2px solid black;
+}
+
+/* Textos saída */
+#check-mesage,
+#contagem-soma,
+#placar-soma {
+    display: block;
+    margin: 1rem;
+}
+
+/* Classe invisível */
+.invisivel {
+    visibility: hidden;
+}
+
+/* Classe Acertou */
+.acertou {
+    color: green;
+    visibility: visible;
+}
+
+/* Classe errou */
+.errou {
+    color: red;
+    visibility: visible;
+}
+
+/* Span do footer */
+.contatos {
+    font-size: 1.2rem;
+    display: block;
+    color: var(--border-hover-select);
+    margin-top: 2rem;
+}
+
+/* -------------- JANELA CONTAS --------------- */
+
+/* -------------- SEÇÃO SOMA --------------- */

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+    <link rel="stylesheet" href="styles/style-soma.css">
+</head>
+
+<body>
+    <section class="section-soma">
+        <div class="window-alpha">
+            <div class="config-soma">
+                <h2>Configurações</h2>
+                <div class="div-line">
+                    <label for="select-digitos-soma">Intervalo de soma</label>
+                    <select name="select-digitos-soma" id="select-digitos-soma">
+                        <option value="1">De 9 à 0</option>
+                        <option value="2">De 99 à 0</option>
+                        <option value="3">De 999 à 0</option>
+                        <!-- <option value="4">Personalizado</option> -->
+                    </select>
+                </div>
+                <div class="div-line">
+                    <label for="select-quant-soma">Quantidade de contas</label>
+                    <select name="select-quant-soma" id="select-quant-soma">
+                        <option value="1">5</option>
+                        <option value="2">10</option>
+                        <option value="3">15</option>
+                        <option value="4">20</option>
+                    </select>
+                </div>
+                <button id="config-button">Começar</button>
+            </div>
+        </div>
+        <div class="container-soma">
+            <h2>Soma</h2>
+            <span id="cronometro">Tempo: 00:00:00 </span>
+            <span id="contagem-soma">Conta </span>
+            <div class="div-tempo-soma">
+                <span class="texto-conta"></span>
+                <input type="number" class="input-texto">
+            </div>
+            <span id="check-mesage" class="invisivel">Acertou</span>
+            <span id="placar-soma">Acertos = 0 Erros = 0</span>
+            <button id="button-verifica">OK</button>
+            <button id="button-reiniciar">Reiniciar</button>
+            <footer>
+                <span class="contatos">Desenvolvido por Alessandro Feitosa - <a
+                        href="https://github.com/AlessandroFeitosa" target="_blank">Github</a> - Version: 0.0.0.0</span>
+            </footer>
+        </div>
+
+    </section>
+    <script src="scripts/script-soma.js"></script>
+</body>
+
+</html>
